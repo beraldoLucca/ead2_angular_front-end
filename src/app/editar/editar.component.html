@@ -1,0 +1,25 @@
+<div class="ml-6 mr-6 mt-6">
+  <form [formGroup]="formCadastro" (submit)="onSubmit()">
+    <div class="field mgt-small">
+      <label class="label">Nome</label>
+      <div class="control ">
+        <input class="input" type="text" placeholder="nome do produto" formControlName="titulo">
+      </div>
+    </div>
+    <div class="field mgt-small">
+      <label class="label">Preço</label>
+      <div class="control ">
+        <input class="input" type="number" placeholder="preço do produto" formControlName="preco">
+      </div>
+    </div>
+    <div class="field mgt-small">
+      <label class="label">Descrição</label>
+      <div class="control ">
+        <input class="input" type="text" placeholder="descrição do produto" formControlName="descricao">
+      </div>
+    </div>
+    <div class="control">
+      <button class="button is-primary">Enviar</button>
+    </div>
+  </form>
+</div>
